@@ -6,13 +6,14 @@ body {
 }
 
 .chess-board {
+    margin-left: 20px;
     display: inline-block;
     border: 5px solid #000;
     &__letters {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin: 20px 26px 20px 26px;
+        margin: 7px 26px 7px 26px;
     }
 
     &__row {
@@ -50,4 +51,23 @@ body {
     &__border-right {
         border-right: 3px solid #000;
     }
+}
+
+.chess-grid {
+    margin: 0px 0px 50px 20px;
+    height: 916px;
+    width: 896px;
+    border: 5px solid #000;
+    display: grid;
+    grid-template-columns:  50px 100px 100px 100px 100px 100px 100px 100px 100px 50px;
+    grid-template-rows:  60px 100px 100px 100px 100px 100px 100px 100px 100px 60px;
+    align-items: center;
+}
+
+.letters {
+    margin: 0 35px 0 35px;
+}
+
+.numbers {
+    margin-left: 13px;
 }
