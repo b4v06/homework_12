@@ -1,0 +1,53 @@
+body {
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif, serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.chess-board {
+    display: inline-block;
+    border: 5px solid #000;
+    &__letters {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 20px 26px 20px 26px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        &>span {
+            margin: 0 20px 0 20px;
+        }
+    }
+
+    &__white-tile {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        background-color: #fff;
+        margin: -2px;
+    }
+
+    &__black-tile {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        background-color: #000;
+        margin: -2px;
+    }
+    &__border-top {
+        border-top: 3px solid #000;
+    }
+    &__border-bottom {
+        border-bottom: 3px solid #000;
+    }
+    &__border-left {
+        border-left: 3px solid #000;
+    }
+    &__border-right {
+        border-right: 3px solid #000;
+    }
+}
